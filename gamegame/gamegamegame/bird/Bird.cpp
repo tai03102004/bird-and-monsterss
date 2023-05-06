@@ -74,13 +74,13 @@ bool Bird::collisionDetector(Pipe *pipe)
     bool collided = false;
 
 
-//    if(pipe->top_dst.x <= pos.x + pos.w && pipe->top_dst.x + PIPE_WIDTH >= pos.x + pos.w)
-//    {
-//        if(pos.y < pipe->top_dst.y + pipe->top_dst.h || pos.y + pos.h > pipe->bottom_dst.y)
-//        {
-//            collided = true;
-//        }
-//    }
+   if(pipe->top_dst.x <= pos.x + pos.w && pipe->top_dst.x + PIPE_WIDTH >= pos.x + pos.w)
+   {
+       if(pos.y < pipe->top_dst.y + pipe->top_dst.h || pos.y + pos.h > pipe->bottom_dst.y)
+       {
+           collided = true;
+       }
+   }
 
     // ground
     // kiểm tra xem nếu toạ độ y của chim > chiều cao của khung - mặt đất
